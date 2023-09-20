@@ -35,6 +35,7 @@ app.use(cors());
 // using default json parser provided by express, instead of body-parser
 app.use(express.json());
 app.use(morgan("dev"));
+// serving the frontend
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 // routes
